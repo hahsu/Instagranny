@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		536BC8D920F40E8100D1FCE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8D820F40E8100D1FCE4 /* AppDelegate.m */; };
+		536BC8DC20F40E8200D1FCE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8DB20F40E8200D1FCE4 /* ViewController.m */; };
+		536BC8DF20F40E8200D1FCE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536BC8DD20F40E8200D1FCE4 /* Main.storyboard */; };
+		536BC8E120F40E8300D1FCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536BC8E020F40E8300D1FCE4 /* Assets.xcassets */; };
+		536BC8E420F40E8300D1FCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536BC8E220F40E8300D1FCE4 /* LaunchScreen.storyboard */; };
+		536BC8E720F40E8300D1FCE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8E620F40E8300D1FCE4 /* main.m */; };
+		536BC8F120F40E8300D1FCE4 /* Instagranny8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8F020F40E8300D1FCE4 /* Instagranny8Tests.m */; };
+		536BC8FC20F40E8300D1FCE4 /* Instagranny8UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8FB20F40E8300D1FCE4 /* Instagranny8UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		536BC8ED20F40E8300D1FCE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 536BC8CC20F40E8100D1FCE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 536BC8D320F40E8100D1FCE4;
+			remoteInfo = Instagranny8;
+		};
+		536BC8F820F40E8300D1FCE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 536BC8CC20F40E8100D1FCE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 536BC8D320F40E8100D1FCE4;
+			remoteInfo = Instagranny8;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		536BC8D420F40E8100D1FCE4 /* Instagranny8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagranny8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		536BC8D720F40E8100D1FCE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		536BC8D820F40E8100D1FCE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		536BC8DA20F40E8100D1FCE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		536BC8DB20F40E8200D1FCE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		536BC8DE20F40E8200D1FCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		536BC8E020F40E8300D1FCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		536BC8E320F40E8300D1FCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		536BC8E520F40E8300D1FCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536BC8E620F40E8300D1FCE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		536BC8EC20F40E8300D1FCE4 /* Instagranny8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Instagranny8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		536BC8F020F40E8300D1FCE4 /* Instagranny8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instagranny8Tests.m; sourceTree = "<group>"; };
+		536BC8F220F40E8300D1FCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536BC8F720F40E8300D1FCE4 /* Instagranny8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Instagranny8UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		536BC8FB20F40E8300D1FCE4 /* Instagranny8UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instagranny8UITests.m; sourceTree = "<group>"; };
+		536BC8FD20F40E8300D1FCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		536BC8D120F40E8100D1FCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BC8E920F40E8300D1FCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BC8F420F40E8300D1FCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		536BC8CB20F40E8100D1FCE4 = {
+			isa = PBXGroup;
+			children = (
+				536BC8D620F40E8100D1FCE4 /* Instagranny8 */,
+				536BC8EF20F40E8300D1FCE4 /* Instagranny8Tests */,
+				536BC8FA20F40E8300D1FCE4 /* Instagranny8UITests */,
+				536BC8D520F40E8100D1FCE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		536BC8D520F40E8100D1FCE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				536BC8D420F40E8100D1FCE4 /* Instagranny8.app */,
+				536BC8EC20F40E8300D1FCE4 /* Instagranny8Tests.xctest */,
+				536BC8F720F40E8300D1FCE4 /* Instagranny8UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		536BC8D620F40E8100D1FCE4 /* Instagranny8 */ = {
+			isa = PBXGroup;
+			children = (
+				536BC8D720F40E8100D1FCE4 /* AppDelegate.h */,
+				536BC8D820F40E8100D1FCE4 /* AppDelegate.m */,
+				536BC8DA20F40E8100D1FCE4 /* ViewController.h */,
+				536BC8DB20F40E8200D1FCE4 /* ViewController.m */,
+				536BC8DD20F40E8200D1FCE4 /* Main.storyboard */,
+				536BC8E020F40E8300D1FCE4 /* Assets.xcassets */,
+				536BC8E220F40E8300D1FCE4 /* LaunchScreen.storyboard */,
+				536BC8E520F40E8300D1FCE4 /* Info.plist */,
+				536BC8E620F40E8300D1FCE4 /* main.m */,
+			);
+			path = Instagranny8;
+			sourceTree = "<group>";
+		};
+		536BC8EF20F40E8300D1FCE4 /* Instagranny8Tests */ = {
+			isa = PBXGroup;
+			children = (
+				536BC8F020F40E8300D1FCE4 /* Instagranny8Tests.m */,
+				536BC8F220F40E8300D1FCE4 /* Info.plist */,
+			);
+			path = Instagranny8Tests;
+			sourceTree = "<group>";
+		};
+		536BC8FA20F40E8300D1FCE4 /* Instagranny8UITests */ = {
+			isa = PBXGroup;
+			children = (
+				536BC8FB20F40E8300D1FCE4 /* Instagranny8UITests.m */,
+				536BC8FD20F40E8300D1FCE4 /* Info.plist */,
+			);
+			path = Instagranny8UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		536BC8D320F40E8100D1FCE4 /* Instagranny8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536BC90020F40E8300D1FCE4 /* Build configuration list for PBXNativeTarget "Instagranny8" */;
+			buildPhases = (
+				536BC8D020F40E8100D1FCE4 /* Sources */,
+				536BC8D120F40E8100D1FCE4 /* Frameworks */,
+				536BC8D220F40E8100D1FCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Instagranny8;
+			productName = Instagranny8;
+			productReference = 536BC8D420F40E8100D1FCE4 /* Instagranny8.app */;
+			productType = "com.apple.product-type.application";
+		};
+		536BC8EB20F40E8300D1FCE4 /* Instagranny8Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536BC90320F40E8300D1FCE4 /* Build configuration list for PBXNativeTarget "Instagranny8Tests" */;
+			buildPhases = (
+				536BC8E820F40E8300D1FCE4 /* Sources */,
+				536BC8E920F40E8300D1FCE4 /* Frameworks */,
+				536BC8EA20F40E8300D1FCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				536BC8EE20F40E8300D1FCE4 /* PBXTargetDependency */,
+			);
+			name = Instagranny8Tests;
+			productName = Instagranny8Tests;
+			productReference = 536BC8EC20F40E8300D1FCE4 /* Instagranny8Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		536BC8F620F40E8300D1FCE4 /* Instagranny8UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536BC90620F40E8300D1FCE4 /* Build configuration list for PBXNativeTarget "Instagranny8UITests" */;
+			buildPhases = (
+				536BC8F320F40E8300D1FCE4 /* Sources */,
+				536BC8F420F40E8300D1FCE4 /* Frameworks */,
+				536BC8F520F40E8300D1FCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				536BC8F920F40E8300D1FCE4 /* PBXTargetDependency */,
+			);
+			name = Instagranny8UITests;
+			productName = Instagranny8UITests;
+			productReference = 536BC8F720F40E8300D1FCE4 /* Instagranny8UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		536BC8CC20F40E8100D1FCE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Hannah Hsu";
+				TargetAttributes = {
+					536BC8D320F40E8100D1FCE4 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					536BC8EB20F40E8300D1FCE4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 536BC8D320F40E8100D1FCE4;
+					};
+					536BC8F620F40E8300D1FCE4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 536BC8D320F40E8100D1FCE4;
+					};
+				};
+			};
+			buildConfigurationList = 536BC8CF20F40E8100D1FCE4 /* Build configuration list for PBXProject "Instagranny8" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 536BC8CB20F40E8100D1FCE4;
+			productRefGroup = 536BC8D520F40E8100D1FCE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				536BC8D320F40E8100D1FCE4 /* Instagranny8 */,
+				536BC8EB20F40E8300D1FCE4 /* Instagranny8Tests */,
+				536BC8F620F40E8300D1FCE4 /* Instagranny8UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		536BC8D220F40E8100D1FCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536BC8E420F40E8300D1FCE4 /* LaunchScreen.storyboard in Resources */,
+				536BC8E120F40E8300D1FCE4 /* Assets.xcassets in Resources */,
+				536BC8DF20F40E8200D1FCE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BC8EA20F40E8300D1FCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BC8F520F40E8300D1FCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		536BC8D020F40E8100D1FCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536BC8DC20F40E8200D1FCE4 /* ViewController.m in Sources */,
+				536BC8E720F40E8300D1FCE4 /* main.m in Sources */,
+				536BC8D920F40E8100D1FCE4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BC8E820F40E8300D1FCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536BC8F120F40E8300D1FCE4 /* Instagranny8Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536BC8F320F40E8300D1FCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536BC8FC20F40E8300D1FCE4 /* Instagranny8UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		536BC8EE20F40E8300D1FCE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 536BC8D320F40E8100D1FCE4 /* Instagranny8 */;
+			targetProxy = 536BC8ED20F40E8300D1FCE4 /* PBXContainerItemProxy */;
+		};
+		536BC8F920F40E8300D1FCE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 536BC8D320F40E8100D1FCE4 /* Instagranny8 */;
+			targetProxy = 536BC8F820F40E8300D1FCE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		536BC8DD20F40E8200D1FCE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				536BC8DE20F40E8200D1FCE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		536BC8E220F40E8300D1FCE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				536BC8E320F40E8300D1FCE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		536BC8FE20F40E8300D1FCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		536BC8FF20F40E8300D1FCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		536BC90120F40E8300D1FCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Instagranny8/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhsu977.Instagranny8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		536BC90220F40E8300D1FCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Instagranny8/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhsu977.Instagranny8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		536BC90420F40E8300D1FCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Instagranny8Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhsu977.Instagranny8Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instagranny8.app/Instagranny8";
+			};
+			name = Debug;
+		};
+		536BC90520F40E8300D1FCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Instagranny8Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhsu977.Instagranny8Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instagranny8.app/Instagranny8";
+			};
+			name = Release;
+		};
+		536BC90720F40E8300D1FCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Instagranny8UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhsu977.Instagranny8UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Instagranny8;
+			};
+			name = Debug;
+		};
+		536BC90820F40E8300D1FCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Instagranny8UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhsu977.Instagranny8UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Instagranny8;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		536BC8CF20F40E8100D1FCE4 /* Build configuration list for PBXProject "Instagranny8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536BC8FE20F40E8300D1FCE4 /* Debug */,
+				536BC8FF20F40E8300D1FCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		536BC90020F40E8300D1FCE4 /* Build configuration list for PBXNativeTarget "Instagranny8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536BC90120F40E8300D1FCE4 /* Debug */,
+				536BC90220F40E8300D1FCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		536BC90320F40E8300D1FCE4 /* Build configuration list for PBXNativeTarget "Instagranny8Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536BC90420F40E8300D1FCE4 /* Debug */,
+				536BC90520F40E8300D1FCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		536BC90620F40E8300D1FCE4 /* Build configuration list for PBXNativeTarget "Instagranny8UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536BC90720F40E8300D1FCE4 /* Debug */,
+				536BC90820F40E8300D1FCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 536BC8CC20F40E8100D1FCE4 /* Project object */;
+}

@@ -15,6 +15,9 @@
 		536BC8E720F40E8300D1FCE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8E620F40E8300D1FCE4 /* main.m */; };
 		536BC8F120F40E8300D1FCE4 /* Instagranny8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8F020F40E8300D1FCE4 /* Instagranny8Tests.m */; };
 		536BC8FC20F40E8300D1FCE4 /* Instagranny8UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8FB20F40E8300D1FCE4 /* Instagranny8UITests.m */; };
+		BAAE800C3BED84CB40EC569B /* libPods-Instagranny8UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9A0C3FF303395756439418 /* libPods-Instagranny8UITests.a */; };
+		BE36C6DE463FA26364931EF5 /* libPods-Instagranny8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AA8F2069DEF91A0DA448D8 /* libPods-Instagranny8.a */; };
+		D4463531A31B37424205C364 /* libPods-Instagranny8Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2AE2E2A2005B3389DEEE5A /* libPods-Instagranny8Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2AE2E2A2005B3389DEEE5A /* libPods-Instagranny8Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Instagranny8Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D063ED074EF68292A0A34E5 /* Pods-Instagranny8Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagranny8Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagranny8Tests/Pods-Instagranny8Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		25C145CDD20E688546BC93C8 /* Pods-Instagranny8UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagranny8UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagranny8UITests/Pods-Instagranny8UITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B9A0C3FF303395756439418 /* libPods-Instagranny8UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Instagranny8UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BC8D420F40E8100D1FCE4 /* Instagranny8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagranny8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BC8D720F40E8100D1FCE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		536BC8D820F40E8100D1FCE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		536BC8F720F40E8300D1FCE4 /* Instagranny8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Instagranny8UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BC8FB20F40E8300D1FCE4 /* Instagranny8UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instagranny8UITests.m; sourceTree = "<group>"; };
 		536BC8FD20F40E8300D1FCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58AA8F2069DEF91A0DA448D8 /* libPods-Instagranny8.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Instagranny8.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		600362E5B7756E404DBF076B /* Pods-Instagranny8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagranny8.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagranny8/Pods-Instagranny8.release.xcconfig"; sourceTree = "<group>"; };
+		72AB1F83986E2CC3A084260D /* Pods-Instagranny8UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagranny8UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagranny8UITests/Pods-Instagranny8UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C334CEE19509EB70FE1781B2 /* Pods-Instagranny8.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagranny8.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagranny8/Pods-Instagranny8.debug.xcconfig"; sourceTree = "<group>"; };
+		C5DCE57F5608409C62126BFA /* Pods-Instagranny8Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagranny8Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagranny8Tests/Pods-Instagranny8Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE36C6DE463FA26364931EF5 /* libPods-Instagranny8.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4463531A31B37424205C364 /* libPods-Instagranny8Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAE800C3BED84CB40EC569B /* libPods-Instagranny8UITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32B299F6C17DF31E6538E204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58AA8F2069DEF91A0DA448D8 /* libPods-Instagranny8.a */,
+				0A2AE2E2A2005B3389DEEE5A /* libPods-Instagranny8Tests.a */,
+				4B9A0C3FF303395756439418 /* libPods-Instagranny8UITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		536BC8CB20F40E8100D1FCE4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				536BC8EF20F40E8300D1FCE4 /* Instagranny8Tests */,
 				536BC8FA20F40E8300D1FCE4 /* Instagranny8UITests */,
 				536BC8D520F40E8100D1FCE4 /* Products */,
+				6C86F1AE3E81264C45D5022C /* Pods */,
+				32B299F6C17DF31E6538E204 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +159,19 @@
 			path = Instagranny8UITests;
 			sourceTree = "<group>";
 		};
+		6C86F1AE3E81264C45D5022C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C334CEE19509EB70FE1781B2 /* Pods-Instagranny8.debug.xcconfig */,
+				600362E5B7756E404DBF076B /* Pods-Instagranny8.release.xcconfig */,
+				1D063ED074EF68292A0A34E5 /* Pods-Instagranny8Tests.debug.xcconfig */,
+				C5DCE57F5608409C62126BFA /* Pods-Instagranny8Tests.release.xcconfig */,
+				72AB1F83986E2CC3A084260D /* Pods-Instagranny8UITests.debug.xcconfig */,
+				25C145CDD20E688546BC93C8 /* Pods-Instagranny8UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 536BC90020F40E8300D1FCE4 /* Build configuration list for PBXNativeTarget "Instagranny8" */;
 			buildPhases = (
+				FB3999623D79A07C5A45C192 /* [CP] Check Pods Manifest.lock */,
 				536BC8D020F40E8100D1FCE4 /* Sources */,
 				536BC8D120F40E8100D1FCE4 /* Frameworks */,
 				536BC8D220F40E8100D1FCE4 /* Resources */,
+				8AC434974E7897C52E4E59B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 536BC90320F40E8300D1FCE4 /* Build configuration list for PBXNativeTarget "Instagranny8Tests" */;
 			buildPhases = (
+				60D04DF0173C783EF150EAC1 /* [CP] Check Pods Manifest.lock */,
 				536BC8E820F40E8300D1FCE4 /* Sources */,
 				536BC8E920F40E8300D1FCE4 /* Frameworks */,
 				536BC8EA20F40E8300D1FCE4 /* Resources */,
@@ -174,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 536BC90620F40E8300D1FCE4 /* Build configuration list for PBXNativeTarget "Instagranny8UITests" */;
 			buildPhases = (
+				62CB6290CB1FC81071953634 /* [CP] Check Pods Manifest.lock */,
 				536BC8F320F40E8300D1FCE4 /* Sources */,
 				536BC8F420F40E8300D1FCE4 /* Frameworks */,
 				536BC8F520F40E8300D1FCE4 /* Resources */,
@@ -256,6 +300,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60D04DF0173C783EF150EAC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instagranny8Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62CB6290CB1FC81071953634 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instagranny8UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AC434974E7897C52E4E59B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Instagranny8/Pods-Instagranny8-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Parse.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instagranny8/Pods-Instagranny8-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB3999623D79A07C5A45C192 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instagranny8-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		536BC8D020F40E8100D1FCE4 /* Sources */ = {
@@ -431,9 +550,11 @@
 		};
 		536BC90120F40E8300D1FCE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C334CEE19509EB70FE1781B2 /* Pods-Instagranny8.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RN4LVMY9S;
 				INFOPLIST_FILE = Instagranny8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,9 +568,11 @@
 		};
 		536BC90220F40E8300D1FCE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 600362E5B7756E404DBF076B /* Pods-Instagranny8.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RN4LVMY9S;
 				INFOPLIST_FILE = Instagranny8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,6 +586,7 @@
 		};
 		536BC90420F40E8300D1FCE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D063ED074EF68292A0A34E5 /* Pods-Instagranny8Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -481,6 +605,7 @@
 		};
 		536BC90520F40E8300D1FCE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5DCE57F5608409C62126BFA /* Pods-Instagranny8Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +624,7 @@
 		};
 		536BC90720F40E8300D1FCE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72AB1F83986E2CC3A084260D /* Pods-Instagranny8UITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Instagranny8UITests/Info.plist;
@@ -516,6 +642,7 @@
 		};
 		536BC90820F40E8300D1FCE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C145CDD20E688546BC93C8 /* Pods-Instagranny8UITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Instagranny8UITests/Info.plist;

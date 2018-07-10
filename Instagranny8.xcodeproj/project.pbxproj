@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		536BC8D920F40E8100D1FCE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8D820F40E8100D1FCE4 /* AppDelegate.m */; };
-		536BC8DC20F40E8200D1FCE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8DB20F40E8200D1FCE4 /* ViewController.m */; };
 		536BC8DF20F40E8200D1FCE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536BC8DD20F40E8200D1FCE4 /* Main.storyboard */; };
 		536BC8E120F40E8300D1FCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536BC8E020F40E8300D1FCE4 /* Assets.xcassets */; };
 		536BC8E420F40E8300D1FCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536BC8E220F40E8300D1FCE4 /* LaunchScreen.storyboard */; };
 		536BC8E720F40E8300D1FCE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8E620F40E8300D1FCE4 /* main.m */; };
 		536BC8F120F40E8300D1FCE4 /* Instagranny8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8F020F40E8300D1FCE4 /* Instagranny8Tests.m */; };
 		536BC8FC20F40E8300D1FCE4 /* Instagranny8UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC8FB20F40E8300D1FCE4 /* Instagranny8UITests.m */; };
+		536BC90B20F413FD00D1FCE4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC90A20F413FD00D1FCE4 /* LoginViewController.m */; };
+		536BC90E20F418CA00D1FCE4 /* photosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC90D20F418CA00D1FCE4 /* photosViewController.m */; };
+		536BC91120F429FF00D1FCE4 /* composeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC91020F429FF00D1FCE4 /* composeViewController.m */; };
+		536BC91720F430FA00D1FCE4 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC91620F430FA00D1FCE4 /* PostCell.m */; };
 		BAAE800C3BED84CB40EC569B /* libPods-Instagranny8UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9A0C3FF303395756439418 /* libPods-Instagranny8UITests.a */; };
 		BE36C6DE463FA26364931EF5 /* libPods-Instagranny8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AA8F2069DEF91A0DA448D8 /* libPods-Instagranny8.a */; };
 		D4463531A31B37424205C364 /* libPods-Instagranny8Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2AE2E2A2005B3389DEEE5A /* libPods-Instagranny8Tests.a */; };
@@ -45,8 +48,6 @@
 		536BC8D420F40E8100D1FCE4 /* Instagranny8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagranny8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BC8D720F40E8100D1FCE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		536BC8D820F40E8100D1FCE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		536BC8DA20F40E8100D1FCE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		536BC8DB20F40E8200D1FCE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		536BC8DE20F40E8200D1FCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		536BC8E020F40E8300D1FCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		536BC8E320F40E8300D1FCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +59,14 @@
 		536BC8F720F40E8300D1FCE4 /* Instagranny8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Instagranny8UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BC8FB20F40E8300D1FCE4 /* Instagranny8UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instagranny8UITests.m; sourceTree = "<group>"; };
 		536BC8FD20F40E8300D1FCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536BC90920F413FD00D1FCE4 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		536BC90A20F413FD00D1FCE4 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		536BC90C20F418CA00D1FCE4 /* photosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = photosViewController.h; sourceTree = "<group>"; };
+		536BC90D20F418CA00D1FCE4 /* photosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = photosViewController.m; sourceTree = "<group>"; };
+		536BC90F20F429FF00D1FCE4 /* composeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = composeViewController.h; sourceTree = "<group>"; };
+		536BC91020F429FF00D1FCE4 /* composeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = composeViewController.m; sourceTree = "<group>"; };
+		536BC91520F430FA00D1FCE4 /* PostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		536BC91620F430FA00D1FCE4 /* PostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 		58AA8F2069DEF91A0DA448D8 /* libPods-Instagranny8.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Instagranny8.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		600362E5B7756E404DBF076B /* Pods-Instagranny8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagranny8.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagranny8/Pods-Instagranny8.release.xcconfig"; sourceTree = "<group>"; };
 		72AB1F83986E2CC3A084260D /* Pods-Instagranny8UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagranny8UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagranny8UITests/Pods-Instagranny8UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,13 +139,19 @@
 			children = (
 				536BC8D720F40E8100D1FCE4 /* AppDelegate.h */,
 				536BC8D820F40E8100D1FCE4 /* AppDelegate.m */,
-				536BC8DA20F40E8100D1FCE4 /* ViewController.h */,
-				536BC8DB20F40E8200D1FCE4 /* ViewController.m */,
 				536BC8DD20F40E8200D1FCE4 /* Main.storyboard */,
 				536BC8E020F40E8300D1FCE4 /* Assets.xcassets */,
 				536BC8E220F40E8300D1FCE4 /* LaunchScreen.storyboard */,
 				536BC8E520F40E8300D1FCE4 /* Info.plist */,
 				536BC8E620F40E8300D1FCE4 /* main.m */,
+				536BC90920F413FD00D1FCE4 /* LoginViewController.h */,
+				536BC90A20F413FD00D1FCE4 /* LoginViewController.m */,
+				536BC90C20F418CA00D1FCE4 /* photosViewController.h */,
+				536BC90D20F418CA00D1FCE4 /* photosViewController.m */,
+				536BC90F20F429FF00D1FCE4 /* composeViewController.h */,
+				536BC91020F429FF00D1FCE4 /* composeViewController.m */,
+				536BC91520F430FA00D1FCE4 /* PostCell.h */,
+				536BC91620F430FA00D1FCE4 /* PostCell.m */,
 			);
 			path = Instagranny8;
 			sourceTree = "<group>";
@@ -381,9 +396,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				536BC8DC20F40E8200D1FCE4 /* ViewController.m in Sources */,
+				536BC90B20F413FD00D1FCE4 /* LoginViewController.m in Sources */,
+				536BC91120F429FF00D1FCE4 /* composeViewController.m in Sources */,
+				536BC90E20F418CA00D1FCE4 /* photosViewController.m in Sources */,
 				536BC8E720F40E8300D1FCE4 /* main.m in Sources */,
 				536BC8D920F40E8100D1FCE4 /* AppDelegate.m in Sources */,
+				536BC91720F430FA00D1FCE4 /* PostCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

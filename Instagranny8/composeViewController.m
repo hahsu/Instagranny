@@ -7,10 +7,13 @@
 //
 
 #import "composeViewController.h"
-#import "PostCell.h"
-@interface composeViewController ()
+#import "Post.h"
+#import <CoreLocation/CoreLocation.h>
+@interface composeViewController () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *posterView;
 @property (weak, nonatomic) IBOutlet UITextView *captionView;
+@property (weak, nonatomic) IBOutlet UISwitch *locationSwitch;
+@property (weak, nonatomic) IBOutlet MKMapView *locationView;
 
 @end
 
@@ -18,6 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.locationView.delegate = self;
+    self.locationManager = [[CLLocationManager alloc]init];
+    [self.locationManager requestWhenInUseAuthorization];
     // Do any additional setup after loading the view.
 }
 
@@ -26,50 +32,53 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)tapImage:(id)sender {
-    NSLog(@"Hello");
     UIImagePickerController *imagePickerVC = [UIImagePickerController new];
     imagePickerVC.delegate = self;
     imagePickerVC.allowsEditing = YES;
+    /*
     imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
     [self presentViewController:imagePickerVC animated:YES completion:nil];
+     */
     
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
+        [self presentViewController:imagePickerVC animated:YES completion:nil];
     }
     else {
         NSLog(@"Camera 🚫 available so we will use photo library instead");
         imagePickerVC.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        [self presentViewController:imagePickerVC animated:YES completion:nil];
+    }
+}
+- (IBAction)didTapSwitch:(id)sender {
+    if(self.locationSwitch.isOn == NO){
+        [self.locationView setHidden:YES];
+    }
+    else{
+        [self.locationView setHidden:NO];
     }
 }
 - (IBAction)tappedCancel:(id)sender {
     [self dismissViewControllerAnimated:true completion:nil];
 }
 - (IBAction)tappedShare:(id)sender {
-    [PostCell postUserImage:self.posterView.image withCaption:self.captionView.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+    [Post postUserImage:self.posterView.image withCaption:self.captionView.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
         if(error == nil){
             [self dismissViewControllerAnimated:YES completion:nil];
         }
     }];
 }
-
-- (UIImage *)resizeImage:(UIImage *)image withSize:(CGSize)size {
-    UIImageView *resizeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
-    
-    resizeImageView.contentMode = UIViewContentModeScaleAspectFill;
-    resizeImageView.image = image;
-    
-    UIGraphicsBeginImageContext(size);
-    [resizeImageView.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return newImage;
+- (IBAction)pressedPickFromCameraRoll:(id)sender {
+    UIImagePickerController *imagePickerVC = [UIImagePickerController new];
+    imagePickerVC.delegate = self;
+    imagePickerVC.allowsEditing = YES;
+    imagePickerVC.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [self presentViewController:imagePickerVC animated:YES completion:nil];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     
     // Get the image captured by the UIImagePickerController
-    UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
     UIImage *editedImage = info[UIImagePickerControllerEditedImage];
     self.posterView.image = editedImage;
     

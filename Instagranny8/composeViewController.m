@@ -8,8 +8,8 @@
 
 #import "composeViewController.h"
 #import "Post.h"
-#import <CoreLocation/CoreLocation.h>
-@interface composeViewController () <MKMapViewDelegate>
+
+@interface composeViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *posterView;
 @property (weak, nonatomic) IBOutlet UITextView *captionView;
 @property (weak, nonatomic) IBOutlet UISwitch *locationSwitch;
@@ -24,7 +24,34 @@
     self.locationView.delegate = self;
     self.locationManager = [[CLLocationManager alloc]init];
     [self.locationManager requestWhenInUseAuthorization];
+    UILongPressGestureRecognizer *gestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
+    [self.locationView addGestureRecognizer:gestureRecognizer];
     // Do any additional setup after loading the view.
+}
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
+    NSArray *annotations = [mapView annotations];
+    [mapView showAnnotations:annotations animated:YES];
+}
+
+/*
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+    NSLog(@"Hello");
+}
+*/
+
+-(void)handleLongPressGesture:(UIGestureRecognizer*)sender{
+    if(sender.state == UIGestureRecognizerStateEnded){
+        [self.locationView removeGestureRecognizer:sender];
+    }
+    else{
+        CGPoint point = [sender locationInView:self.locationView];
+        CLLocationCoordinate2D locCoord = [self.locationView convertPoint:point toCoordinateFromView:self.locationView];
+        MKPointAnnotation *annot = [[MKPointAnnotation alloc]init];
+        annot.coordinate = locCoord;
+        NSLog(@"%f%f", locCoord.latitude, locCoord.longitude);
+        [self.locationView addAnnotation:annot];
+        self.location = locCoord;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,7 +89,7 @@
     [self dismissViewControllerAnimated:true completion:nil];
 }
 - (IBAction)tappedShare:(id)sender {
-    [Post postUserImage:self.posterView.image withCaption:self.captionView.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
+    [Post postUserImage:self.posterView.image withCaption:self.captionView.text withLong:self.location.longitude withLat:self.location.latitude withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
         if(error == nil){
             [self dismissViewControllerAnimated:YES completion:nil];
         }

@@ -17,13 +17,15 @@
 @interface photosViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic, strong) NSArray * posts;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
 @end
 
 @implementation photosViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.activityIndicator startAnimating];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self getPosts];
@@ -81,6 +83,7 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
         if (posts != nil) {
             self.posts = posts;
+            [self.activityIndicator stopAnimating];
             [self.tableView reloadData];
         } else {
             NSLog(@"%@", error.localizedDescription);
@@ -118,6 +121,23 @@
         UIImageView *postImageView = [[UIImageView alloc] initWithImage:postImage];
         
         cell.posterView.image = postImageView.image;
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        // Configure the input format to parse the date string
+        formatter.dateFormat = @"E MMM d HH:mm:ss Z y";
+        // Convert String to Date
+        formatter.dateStyle = NSDateFormatterShortStyle;
+        formatter.timeStyle = NSDateFormatterNoStyle;
+        // Convert Date to String
+        cell.dateLabel.text = [formatter stringFromDate:post.createdAt];
+        // Do any additional setup after loading the view.
+        //NSLog(@"%@", self.post.username);
+        
+        if(post.username == nil){
+            cell.authorLabel.text = @"Anonymous";
+        }
+        else{
+            cell.authorLabel.text = post.username;
+        }
     }];
     //cell.posterView.image = post.image;
     return cell;

@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *captionView;
 @property (weak, nonatomic) IBOutlet UISwitch *locationSwitch;
 @property (weak, nonatomic) IBOutlet MKMapView *locationView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
@@ -89,11 +90,16 @@
     [self dismissViewControllerAnimated:true completion:nil];
 }
 - (IBAction)tappedShare:(id)sender {
+    [self.activityIndicator startAnimating];
     [Post postUserImage:self.posterView.image withCaption:self.captionView.text withLong:self.location.longitude withLat:self.location.latitude withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
         if(error == nil){
             [self dismissViewControllerAnimated:YES completion:nil];
+            [self.activityIndicator stopAnimating];
         }
     }];
+}
+- (IBAction)didTap:(id)sender {
+    [self.view endEditing:YES];
 }
 - (IBAction)pressedPickFromCameraRoll:(id)sender {
     UIImagePickerController *imagePickerVC = [UIImagePickerController new];

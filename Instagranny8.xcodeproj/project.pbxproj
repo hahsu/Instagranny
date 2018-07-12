@@ -21,6 +21,8 @@
 		536BC92020F4671400D1FCE4 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC91F20F4671400D1FCE4 /* PostCell.m */; };
 		536BC92320F52E5900D1FCE4 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC92220F52E5900D1FCE4 /* DetailsViewController.m */; };
 		536BC92520F5637700D1FCE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 536BC92420F5637700D1FCE4 /* CoreLocation.framework */; };
+		536BC92A20F6B09400D1FCE4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC92920F6B09400D1FCE4 /* ProfileViewController.m */; };
+		536BC92D20F6B32200D1FCE4 /* ProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 536BC92C20F6B32200D1FCE4 /* ProfileCell.m */; };
 		BAAE800C3BED84CB40EC569B /* libPods-Instagranny8UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9A0C3FF303395756439418 /* libPods-Instagranny8UITests.a */; };
 		BE36C6DE463FA26364931EF5 /* libPods-Instagranny8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AA8F2069DEF91A0DA448D8 /* libPods-Instagranny8.a */; };
 		D4463531A31B37424205C364 /* libPods-Instagranny8Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2AE2E2A2005B3389DEEE5A /* libPods-Instagranny8Tests.a */; };
@@ -75,6 +77,10 @@
 		536BC92120F52E5900D1FCE4 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		536BC92220F52E5900D1FCE4 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		536BC92420F5637700D1FCE4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		536BC92820F6B09400D1FCE4 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		536BC92920F6B09400D1FCE4 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		536BC92B20F6B32200D1FCE4 /* ProfileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileCell.h; sourceTree = "<group>"; };
+		536BC92C20F6B32200D1FCE4 /* ProfileCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileCell.m; sourceTree = "<group>"; };
 		58AA8F2069DEF91A0DA448D8 /* libPods-Instagranny8.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Instagranny8.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		600362E5B7756E404DBF076B /* Pods-Instagranny8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagranny8.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagranny8/Pods-Instagranny8.release.xcconfig"; sourceTree = "<group>"; };
 		72AB1F83986E2CC3A084260D /* Pods-Instagranny8UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagranny8UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagranny8UITests/Pods-Instagranny8UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +172,10 @@
 				536BC91F20F4671400D1FCE4 /* PostCell.m */,
 				536BC92120F52E5900D1FCE4 /* DetailsViewController.h */,
 				536BC92220F52E5900D1FCE4 /* DetailsViewController.m */,
+				536BC92820F6B09400D1FCE4 /* ProfileViewController.h */,
+				536BC92920F6B09400D1FCE4 /* ProfileViewController.m */,
+				536BC92B20F6B32200D1FCE4 /* ProfileCell.h */,
+				536BC92C20F6B32200D1FCE4 /* ProfileCell.m */,
 			);
 			path = Instagranny8;
 			sourceTree = "<group>";
@@ -411,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				536BC90B20F413FD00D1FCE4 /* LoginViewController.m in Sources */,
+				536BC92A20F6B09400D1FCE4 /* ProfileViewController.m in Sources */,
 				536BC91120F429FF00D1FCE4 /* composeViewController.m in Sources */,
 				536BC90E20F418CA00D1FCE4 /* photosViewController.m in Sources */,
 				536BC8E720F40E8300D1FCE4 /* main.m in Sources */,
@@ -418,6 +429,7 @@
 				536BC8D920F40E8100D1FCE4 /* AppDelegate.m in Sources */,
 				536BC91A20F4654100D1FCE4 /* Post.m in Sources */,
 				536BC92320F52E5900D1FCE4 /* DetailsViewController.m in Sources */,
+				536BC92D20F6B32200D1FCE4 /* ProfileCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

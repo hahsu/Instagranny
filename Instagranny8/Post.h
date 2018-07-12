@@ -26,4 +26,6 @@
 
 + (void) postUserImage: ( UIImage * _Nullable )image withCaption: ( NSString * _Nullable )caption withLong:(float)longitude withLat:(double)lat withCompletion: (PFBooleanResultBlock  _Nullable)completion;
 
++ (PFFile *)getPFFileFromImage: (UIImage * _Nullable)image;
+
 @end

@@ -12,6 +12,7 @@
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIImageView *logoImage;
 
 @end
 
@@ -19,9 +20,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.logoImage.image = [self inverseColor:self.logoImage.image];
     // Do any additional setup after loading the view.
 }
-
+- (UIImage *)inverseColor:(UIImage *)image {
+    CIImage *coreImage = [CIImage imageWithCGImage:image.CGImage];
+    CIFilter *filter = [CIFilter filterWithName:@"CIColorInvert"];
+    [filter setValue:coreImage forKey:kCIInputImageKey];
+    CIImage *result = [filter valueForKey:kCIOutputImageKey];
+    return [UIImage imageWithCIImage:result];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -51,6 +59,12 @@
     newUser.username = self.usernameField.text;
     newUser.password = self.passwordField.text;
     
+    UIImage *profilePic = [UIImage imageNamed:@"image_placeholder"];
+    PFFile *profilePicFile = [self getPFFileFromImage:profilePic];
+    // get image data and check if that is not nil
+    
+    [newUser setValue:profilePicFile forKey:@"profilePic"];
+    
     // call sign up function on the object
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
         if (error != nil) {
@@ -66,6 +80,22 @@
             // manually segue to logged in view
         }
     }];
+}
+
+-(PFFile *)getPFFileFromImage: (UIImage * _Nullable)image {
+    
+    // check if image is not nil
+    if (!image) {
+        return nil;
+    }
+    
+    NSData *imageData = UIImagePNGRepresentation(image);
+    // get image data and check if that is not nil
+    if (!imageData) {
+        return nil;
+    }
+    
+    return [PFFile fileWithName:@"image.png" data:imageData];
 }
 
 - (IBAction)didTapLogin:(id)sender {

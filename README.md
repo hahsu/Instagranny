@@ -35,7 +35,9 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] User can select a location when posting a photo.
+- [x] User can select a location when posting a photo with long tap.
+- [x] In details page, yelp api suggest an event that is near where the picture was taken.
+- [x] Profile pictures are circular
 - [x] Can see latitude and longitude coordinates of each post
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):

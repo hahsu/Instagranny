@@ -21,10 +21,13 @@
 
 @implementation ProfileViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
+    if(self.currUser == nil){
+        self.currUser = [PFUser currentUser];
+    }
     [self getPosts];
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *) self.collectionView.collectionViewLayout;
     
@@ -35,8 +38,8 @@
     CGFloat itemHeight = itemWidth;
     layout.itemSize = CGSizeMake(itemWidth, itemHeight);
     // Do any additional setup after loading the view.
-    self.authorLabel.text = [PFUser currentUser].username;
-    PFFile *image = [[PFUser currentUser] valueForKey:@"profilePic"];
+    self.authorLabel.text = self.currUser.username;
+    PFFile *image = [self.currUser valueForKey:@"profilePic"];
     [image getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
         
         UIImage *postImage = [UIImage imageWithData:imageData];
@@ -49,8 +52,12 @@
     [self.editProfileButton.layer setBorderColor:[[UIColor lightGrayColor] CGColor]];
     [self.editProfileButton.layer setBorderWidth:2.0];
     self.editProfileButton.layer.cornerRadius = 10;
-    
 }
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
 - (IBAction)didTapEditProfile:(id)sender {
     UIImagePickerController *imagePickerVC = [UIImagePickerController new];
     imagePickerVC.delegate = self;
@@ -72,9 +79,9 @@
     UIImage *editedImage = info[UIImagePickerControllerEditedImage];
     self.profilePic.image = editedImage;
     PFFile *profilePicFile = [self getPFFileFromImage:self.profilePic.image];
-    [[PFUser currentUser] setValue:profilePicFile forKey:@"profilePic"];
+    [self.currUser setValue:profilePicFile forKey:@"profilePic"];
     
-    [[PFUser currentUser] saveInBackground];
+    [self.currUser saveInBackground];
     // Do something with the images (based on your use case)
     
     // Dismiss UIImagePickerController to go back to your original view controller
@@ -103,7 +110,7 @@
 
 -(void)getPosts{
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
-    PFUser *currUser = [PFUser currentUser];
+    PFUser *currUser = self.currUser;
     [query whereKey:@"username" equalTo:currUser[@"username"]];
     query.limit = 20;
     [query orderByDescending:@"createdAt"];

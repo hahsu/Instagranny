@@ -23,6 +23,7 @@
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, assign) double longitude;
 @property (nonatomic, assign) double lattitude;
+@property (nonatomic, strong) PFFile *profilePic;
 
 + (void) postUserImage: ( UIImage * _Nullable )image withCaption: ( NSString * _Nullable )caption withLong:(float)longitude withLat:(double)lat withCompletion: (PFBooleanResultBlock  _Nullable)completion;
 

@@ -7,13 +7,14 @@
 //
 
 #import "DetailsViewController.h"
+#import "YelpManager.h"
 
 @interface DetailsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *authorLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *posterView;
 @property (weak, nonatomic) IBOutlet UILabel *captionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timestampLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *eventLabel;
 @end
 
 @implementation DetailsViewController
@@ -48,7 +49,23 @@
     else{
         self.authorLabel.text = self.post.username;
     }
-     
+    [self getEvents];
+}
+
+-(void)getEvents{
+    YelpManager *apiManager = [YelpManager new];
+    NSString *latitude = [NSString stringWithFormat:@"%f", self.post.lattitude];
+    NSString *longitude = [NSString stringWithFormat:@"%f", self.post.longitude];
+    [apiManager getEvent:latitude withLongitude:longitude withCompletion:^(NSDictionary *categories, NSError *error) {
+        NSArray *events = categories[@"events"];
+        if(events.count != 0){
+            NSDictionary *event = events[0];
+            self.eventLabel.text = event[@"name"];
+        }
+        else{
+            self.eventLabel.text = @"No events near you";
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
